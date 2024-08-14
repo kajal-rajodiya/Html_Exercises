@@ -14,7 +14,26 @@
             var elementById = document.getElementById("myElement");
             console.log(elementById);
 
-            
+            //getElementByTagName()
+            var elementByTagName = document.getElementsByTagName("myClass");
+            console.log(elementByTagName);
+
+            //querySelector()
+            var elementSelector = document.querySelector("#myElement");
+            console.log(elementSelector);
+
+            // querySelectorAll()
+            var elementSelectorAll = document.querySelectorAll(".myClass");
+            console.log(elementSelectorAll);
+
+            // createElement() and appendElement()
+            var newElement = documwnr.createElement("p");
+            newElement.textContent = "This is a new paragraph";
+            document.body.appendChild(newElement);
+
+            // removeElement()
+            var elementToRemove = elementsByTagName[0];
+            elementToRemove.parentNode.removeChild(elementToRemove);
         </script>
     </body>
 </html>
