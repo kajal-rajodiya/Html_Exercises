@@ -15,7 +15,7 @@
             console.log(elementById);
 
             //getElementByTagName()
-            var elementByTagName = document.getElementsByTagName("myClass");
+            var elementByTagName = document.getElementsByTagName("div"); // Corrected to use "div"
             console.log(elementByTagName);
 
             //querySelector()
@@ -27,12 +27,12 @@
             console.log(elementSelectorAll);
 
             // createElement() and appendElement()
-            var newElement = documwnr.createElement("p");
+            var newElement = document.createElement("p");
             newElement.textContent = "This is a new paragraph";
             document.body.appendChild(newElement);
 
             // removeElement()
-            var elementToRemove = elementsByTagName[0];
+            var elementToRemove = elementByTagName[0]; // Corrected the variable name
             elementToRemove.parentNode.removeChild(elementToRemove);
         </script>
     </body>
