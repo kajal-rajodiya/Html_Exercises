@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nodes types Examamples</title>
+    </head>
+    <body>
+        <h1 id="title">Welcome to the Node Types Examples</h1>
+        <p>This is a <strong>Paragaraph</strong>element.</p>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+
+        </ul>
+        <script>
+            const titleElement = document.getElementById("title");
+            console.log(titleElement.textContent);
+
+            const textNode = document.createTextNode("this is a dynamical");
+            titleElement.appendChild(textNode);
+            
+           // const  commentNode = document.createComment("This is a dynamically create comment node");
+           // title
+            </script>
+    </body>
+</html>
