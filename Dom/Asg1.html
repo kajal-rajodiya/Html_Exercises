@@ -1,0 +1,71 @@
+<!-- Create a button that, when clicked, adds a new list 
+ item to an unordered list. Each list item should 
+ display the current count of items in the list. 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <button id="btn">Click Me</button>
+        <ul id="ul"></ul>
+        <script>
+            let btn = document.getElementById('btn');
+            let ul = document.getElementById('ul');
+            let count  = 0;
+            btn.addEventListener('click',function(){
+                let li = document.createElement('li');
+                li.textContent = `item ${count +1}`;
+                ul.appendChild(li);
+                count ++;
+            });
+        </script>
+    </body>
+</html> 
+
+Create a button that, when clicked, changes
+  the text content of a paragraph.
+
+<!DOCTYPE html>
+ <html>
+     <head>
+         <title>Page Title</title>
+     </head>
+     <body>
+         <button id="btn">Click Me</button>
+         <p id="para">This is a text</p>
+         <script>
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+
+            btn.addEventListener('click',function(){
+                para.textContent = 'new text content will show';
+
+            });
+         </script>
+     </body>
+ </html> -->
+
+
+ <!-- Create a button that, when clicked, changes 
+  the source of an image.    -->
+
+  <!DOCTYPE html>
+ <html>
+     <head>
+         <title>Page Title</title>
+     </head>
+     <body>
+         <button id="btn">Click Me</button>
+         <img id="img" src="https://picsum.photos/200/300">
+         <script>
+            let btn = document.getElementById('btn');
+            let img = document.getElementById('img');
+            btn.addEventListener('click',function(){
+                img.src = 'https://picsum.photos/200/300?grayscale';
+
+            });
+         </script>
+     </body>
+     </html>
