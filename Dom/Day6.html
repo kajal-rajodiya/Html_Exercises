@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <form id="myForm">
+            <input type="text" id="myInput" placeholder="enter name">
+            <button type="submit">Submit</button>
+        </form>
+        <script>
+            let myForm = document.getElementById('myForm');
+            let myInput = document.getElementById('myInput');
+            myForm.addEventListener('submit', (event)=>{
+                event.preventDefault();
+                console.log('form submitted' );
+  
+            });
+</script>
+    </body>
+</html>
