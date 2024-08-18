@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html><head>
+    <title>DOM Events</title>
+</head>
+<body>
+    <div id="myEle" style="color: red; font-size: 24px; background-color: yellow;">Hello World</div>
+    <script>
+        var elementById = document.getElementById("myEle");
+
+        // changing inline style
+        elementById.style.color = "blue";
+        elementById.style.fontSize = "36px";
+        elementById.style.backgroundColor = "green";    
+
+        // adding multiple inline style
+        elementById.style.cssText = "color: red; font-size: 24px; background-color: yellow;";
+        // removing inline style
+        elementById.style.removeProperty("color");
+    </script>
+</body>
+</html>
